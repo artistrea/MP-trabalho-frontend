@@ -24,4 +24,6 @@ yarn dev
 
 ## Pacotes relevantes adicionados
 
-nenhum por enquanto
+[react-router-dom](https://reactrouter.com/en/v6.3.0/getting-started/overview)
+[zod](https://github.com/colinhacks/zod)
+[sass](https://sass-lang.com/documentation/syntax)
