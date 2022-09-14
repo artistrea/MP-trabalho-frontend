@@ -8,6 +8,9 @@ export const NavBar = () => {
 				<Link to="/">Cardapio</Link>
 			</li>
 			<li>
+				<Link to="/ratings">Fale conosco</Link>
+			</li>
+			<li>
 				<Link to="/login">Login</Link>
 			</li>
 		</ul>

@@ -1,0 +1,61 @@
+.container {
+    height: 100%;
+}
+
+section {
+    display: flex;
+    background-image: url("");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    height: max-content;
+}
+
+.flex {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+
+    width: 40rem;
+    margin-block: auto;
+    margin-inline: auto;
+    
+    & > * {
+        width: 100%;
+    }
+}
+
+input, textarea {
+    font-size: inherit;
+}
+
+.top-inputs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    input {
+        width: 45%;
+    }
+}
+
+button {
+    border: none;
+    font-size: inherit;
+    padding: 0.6em 1em;
+    border-radius: 6px;
+    width: max-content;
+    margin-left: auto;
+    color: white;
+    background-color: var(--clr-green-500);
+}
