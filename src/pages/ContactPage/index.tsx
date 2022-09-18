@@ -1,5 +1,7 @@
 import { ChangeEventHandler, FC, FormEventHandler, useState } from "react";
-import sendUserMessage from "../../api/sendUserMessage";
+import { z } from "zod";
+import dealWithZodError from "../../api/utils/dealWithZodError";
+import sendContactMessage from "../../api/utils/sendContactMessage";
 import "./style.scss";
 
 export const ContactPage: FC = () => {
@@ -17,8 +19,15 @@ export const ContactPage: FC = () => {
     setMessageInfo({ ...messageInfo, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit: FormEventHandler = (_e) => {
-    sendUserMessage(messageInfo);
+  const handleSubmit: FormEventHandler = (e) => {
+    e.preventDefault();
+    sendContactMessage(messageInfo)
+      .then(alert)
+      .catch((er) => {
+        if (!dealWithZodError(er)) {
+          alert(er);
+        }
+      });
   };
 
   return (
