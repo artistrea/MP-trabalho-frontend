@@ -1,0 +1,23 @@
+.h1-homepage{  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 110%;
+ }
+
+.h2-homepage-container{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+ }
+
+ .br-homepage{
+    margin-bottom: 2em;
+ }
+
+ .OrderContainer{
+   padding: 6rem;
+}

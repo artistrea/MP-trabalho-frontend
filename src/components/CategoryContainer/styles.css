@@ -1,0 +1,22 @@
+.h1-homepage{  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+ }
+
+ .home-category-row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .br-homepage{
+    margin-bottom: 2em;
+ }
+
+ .categoryContainer{
+   padding: 6rem;
+ }

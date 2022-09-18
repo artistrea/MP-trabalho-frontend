@@ -1,0 +1,41 @@
+.botao{
+    background-color: unset;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 2px;
+    white-space: nowrap;
+    width: 363px;
+    height: 55px;
+
+    line-height: 22px;
+    font-size: 20px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.botao:hover{
+    filter: brightness(0.80);
+}
+
+.bordaVerde{
+    background-color: white;
+    color: #28A745;
+    border: 1px solid #28A745;
+}
+
+.fundoVerde{
+    color: #ffffff;
+    background-color: #28A745;
+    border: 1px solid #28A745;
+}
+
+.fundoCinza{
+    color: #ffffff;
+    background-color: gray;
+    border: 1px solid gray;
+}

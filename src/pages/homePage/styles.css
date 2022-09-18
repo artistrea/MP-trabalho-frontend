@@ -1,0 +1,65 @@
+
+.home-finish-order-row {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.show-final-price{
+    padding-left: 6rem;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+
+.h1-homepage{  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 110%;
+ }
+
+ .h1-final-price{  
+    color: #28A745;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 110%;
+ }
+
+.h2-homepage{
+    padding-left: 6rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+ }
+
+ .br-homepage{
+    margin-bottom: 2em;
+ }
+
+ .login-or-not-buttons{
+   padding-left: 6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    flex-wrap: wrap;
+ }
+
+ .logged-finish-and-pay{
+    padding-left: 6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    flex-wrap: wrap;
+ }
+
+ .login-or-sigin{
+   padding-left: 6rem;
+ }

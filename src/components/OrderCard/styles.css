@@ -1,0 +1,73 @@
+.orderCardBox {
+    display: grid;
+    grid-template-columns: 140px 210px 150px;
+    background: #FFFFFF;
+    border: 1px solid #6A6A6A;
+    border-radius: 5px;
+    width: 500px;
+    height: 150px;
+}
+
+.orderCardImage {
+    width: 130px;
+    height: 150px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.meal_label_main {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+
+}
+
+.meal_label_tiny {
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #585858;
+
+}
+
+.middleBRLabelOrderMeal {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.orderCardBox>leftColumnOrderCard {
+    width: 140px;
+}
+
+.orderCardBox>middleColumnOrderCard {
+    padding-left: 10px;
+    width: 210px;
+}
+
+.orderCardBox>rightColumnOrderCard {
+    width: 150px;
+}
+
+.quantidade {
+    color: #777676;
+    font-size: 18px;
+}
+
+.redButton {
+    width: 100px;
+    height: 48.42px;
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: white;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: red;
+
+}

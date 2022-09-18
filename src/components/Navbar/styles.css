@@ -1,0 +1,164 @@
+.navbar_header {
+    position: relative;
+    height: 500px;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar_header#restaurant {
+    background-image: url(../../assets/restaurant-1.png); /*restaurant_image*/ 
+}
+
+.navbar_header#backoffice {
+    background-image: url(../../assets/backoffice-1.png); /*backoffice_image*/ 
+}
+
+.header_text_and_subtext_div {
+    position: absolute;
+    top: 50%;
+    left: 4.53%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header_text_restaurant {
+    max-width: 1500px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 116px;
+
+    color: #ffffff;
+}
+
+.header_text_backoffice {
+    max-width: 1500px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 86px;
+    line-height: 116px;
+
+    color: #ffffff;
+}
+
+.header_subtext_restaurant {
+    max-width: 880px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;    
+    
+    color: #ffffff;
+}
+
+.header_subtext_backoffice {
+    max-width: 880px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #ffffff;
+}
+
+.logo {
+    position: absolute;
+    top: 11%;
+    left: 4.53%;
+
+    font-family: 'Markazi Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+
+    color: #ffffff;
+}
+
+.link_div {
+    position: absolute;
+    top: 12.4%;
+    right: 6.11%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 66px;
+    
+}
+
+.link_inactive {
+    text-decoration: none;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;    
+    
+    color: #ffffff;
+}
+
+.link_active {
+    text-decoration: none;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    
+    
+    color: #FFB905;
+}
+
+.backoffice_bar {
+    position: relative;
+    height: 69px;
+    width: 100%;
+    background-color: #424049;
+    display: flex;
+    align-items: center;
+}
+
+.backoffice_link_div {
+    position: absolute;
+    left: 4.53%;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.backoffice_link_inactive {
+    text-decoration: none;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;    
+    
+    color: #B1B1B1;
+}
+
+.backoffice_link_active {
+    text-decoration: none;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #ffffff;
+}
