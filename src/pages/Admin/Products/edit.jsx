@@ -4,7 +4,6 @@ import { ProductForm } from "../../../components/ProductForm";
 export const EditProductPage = () => {
     const { state } = useLocation();
     const { product } = state;
-    console.log(state)
-    return <ProductForm startingProduct={product} update/>;
+    return <ProductForm startingProduct={state} update/>;
 };
 

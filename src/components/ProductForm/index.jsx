@@ -29,7 +29,7 @@ export const ProductForm = ({ startingProduct, update }) => {
 
     return <form onSubmit={handleSubmit}>
         <Input id="name" placeholder="Nome" onChange={handleChange} value={product.name} />
-        <Input id="description" placeholder="Descrição" onChange={handleChange} value={product.description} />
+        <textarea rows={5} id="description" placeholder="Descrição" onChange={handleChange} value={product.description} />
         <Input id="quantity_in_stock" placeholder="Quantidade em estoque" onChange={handleChange} value={product.quantity_in_stock} />
         <Input id="prep_time_in_minutes" placeholder="Tempo médio de preparar" onChange={handleChange} value={product.prep_time_in_minutes} />
         <Input id="price_in_cents" placeholder="Preço em centavos" onChange={handleChange} value={product.price_in_cents} />
