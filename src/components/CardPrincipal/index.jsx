@@ -7,12 +7,13 @@ import numberFormat from '../../utils/numberFormat';
 
 import Imagem from "../../assets/22.jpeg";
 
-const CardPrincipal = ({name,description,value, img, quantity, setQuantity, ...props}) => {
+const CardPrincipal = ({name,description,value, img, quantity, setQuantity,addOrder, ...props}) => {
     
     const [verifica, setVerifica] = useState(false);
     
     function handleClick(){
         setVerifica(!verifica);
+        addOrder
     }
 
     return (

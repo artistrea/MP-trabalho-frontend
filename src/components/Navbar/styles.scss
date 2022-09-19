@@ -1,0 +1,18 @@
+.nav-main {
+    margin-block: 2rem;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+
+        li {
+            display: contents;
+
+            a {
+                font-size: 1.4rem;
+                padding: 1em;
+            }
+        }
+    }
+}

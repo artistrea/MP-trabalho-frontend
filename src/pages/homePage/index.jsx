@@ -32,7 +32,8 @@ export default function HomePage() {
                 name={product.name} 
                 value={product.value} 
                 img={product.img} 
-                description={product.description}/>)}
+                description={product.description}
+                addOrder={() => Orders.push(product)}/>)}
         </CategoryContainer>
         
         <br className="br-homepage" />

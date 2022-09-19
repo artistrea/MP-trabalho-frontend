@@ -1,5 +1,4 @@
-import './styles.css';
-import React from 'react';
+import './styles.scss';
 import { NavLink } from 'react-router-dom';
 
 export function Navbar() {
@@ -11,9 +10,6 @@ export function Navbar() {
                 </li>
                 <li>
                     <NavLink to="/login">Cardápio</NavLink>
-                </li>
-                <li>
-
                 </li>
             </ul>
         </nav>
