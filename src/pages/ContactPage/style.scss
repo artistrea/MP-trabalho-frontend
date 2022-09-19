@@ -4,6 +4,7 @@
 
 section {
     display: flex;
+    flex-direction: column;
     background-image: url("");
     background-size: contain;
     background-repeat: no-repeat;
@@ -38,6 +39,10 @@ form {
 input, textarea {
     font-size: inherit;
     font-family: inherit;
+}
+
+.contact-page__img {
+    max-height: 100vh;
 }
 
 .top-inputs {

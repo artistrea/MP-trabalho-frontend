@@ -1,8 +1,8 @@
-import contact_us from "../requests/contact_us";
+import apiContactUs from "../requests/contact_us/create";
 import { messageInfo, messageInfoSchema } from "../validations/messageInfo";
 
 export default async function sendContactMessage(messageInfo: messageInfo) {
-  messageInfoSchema.parse(messageInfo);
-  return messageInfo;
-  // return contact_us(messageInfo);
+    messageInfoSchema.parse(messageInfo);
+    return apiContactUs(messageInfo);
 }
+
