@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./routes";
 import { Navbar } from "./components/Navbar";
+import { UserProvider } from "./contexts/useUserContext";
 
 const upperLinkHomePage = [
   { title: "backoffice", href: "/backoffice", active: false },
@@ -16,10 +17,10 @@ const upperLinkHomePage = [
 function App() {
   return (
     <BrowserRouter>
-    
-    <Navbar
-        />
-      <AppRoutes />
+      <UserProvider>
+        <Navbar />
+        <AppRoutes />
+      </UserProvider>
     </BrowserRouter>
   );
 }

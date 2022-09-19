@@ -5,15 +5,13 @@ import {useState} from 'react';
 import Botao from "../Button"
 import numberFormat from '../../utils/numberFormat';
 
-import Imagem from "../../assets/22.jpeg";
-
 const CardPrincipal = ({name,description,value, img, quantity, setQuantity,addOrder, ...props}) => {
     
-    const [verifica, setVerifica] = useState(false);
+    const [added, setAdded] = useState(false);
     
     function handleClick(){
-        setVerifica(!verifica);
-        addOrder
+        setAdded(!added);
+        if (!added) {addOrder()}
     }
 
     return (
@@ -28,7 +26,7 @@ const CardPrincipal = ({name,description,value, img, quantity, setQuantity,addOr
             <div className="description">{description}</div>
             <div className="value">{numberFormat(value)} por porção </div>
             <div className="botao-cardPrincipal">
-                <Botao width={326} height={37} className="fundoVerde" onClick={handleClick} >{verifica?`Adicionar ao meu prato`:`Adicionado ao meu prato`}</Botao>
+                <Botao width={326} height={37} className="fundoVerde" onClick={handleClick} >{added?`Adicionado ao meu prato`:`Adicionar ao meu prato`}</Botao>
             </div>
         </div>
         </>
