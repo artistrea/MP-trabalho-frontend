@@ -7,11 +7,11 @@ const ProductCard: FC<{ product: product }> = ({ product }) => {
     return (
         <li style={{ marginBlock: "3rem" }}>
             <details>
-                <summary>
+                <summary style={{ marginLeft: "2rem" }}>
                     <span style={{ fontSize: "2rem" }}>{product.name}</span>
                 </summary>
-                <small>R$ {(product.price_in_cents / 100.0).toFixed(2)}</small>
-                <p>{product.description}</p>
+                <small style={{ marginLeft: "3rem" }}>R$ {(product.price_in_cents / 100.0).toFixed(2)}</small>
+                <p style={{ marginLeft: "3rem" }}>{product.description}</p>
             </details>
         </li>
     );
@@ -33,4 +33,5 @@ const RestaurantMenu = () => {
 };
 
 export default RestaurantMenu;
+export {ProductCard}
 
