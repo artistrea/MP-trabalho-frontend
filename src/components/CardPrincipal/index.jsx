@@ -26,8 +26,6 @@ const CardPrincipal = ({name,description,value, img, quantity, setQuantity, ...p
             </div>
             <div className="description">{description}</div>
             <div className="value">{numberFormat(value)} por porção </div>
-            <div className="quantidade">Quantidade</div>
-            <input type="number" className="Input-cardPrincipal" value={quantity} onChange={e => setQuantity(e.target.value)}/>
             <div className="botao-cardPrincipal">
                 <Botao width={326} height={37} className="fundoVerde" onClick={handleClick} >{verifica?`Adicionar ao meu prato`:`Adicionado ao meu prato`}</Botao>
             </div>

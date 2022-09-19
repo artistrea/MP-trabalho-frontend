@@ -11,6 +11,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
     "styled-components": "^5.3.5",
     "zod": "^3.18.0"
@@ -22,5 +23,9 @@
     "sass": "^1.54.5",
     "typescript": "^4.6.4",
     "vite": "^3.0.7"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/artistrea/MP-trabalho-frontend.git",
+  "author": "cabecones <kevenluan.sb@hotmail.com>",
+  "license": "MIT"
 }
