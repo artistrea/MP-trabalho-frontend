@@ -11,7 +11,7 @@ export function Navbar() {
                 {!user &&
                 <>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/">Cardápio</NavLink>
                     </li>
                     <li>
                         <NavLink to="/contact_us">Deixe uma mensagem</NavLink>
