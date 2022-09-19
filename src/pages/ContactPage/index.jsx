@@ -6,7 +6,7 @@ import useMessagesIndex from "../../api/utils/useContactUsIndex";
 import Input from "../../components/Input";
 import "./style.scss";
 
-export const ContactPage: FC = () => {
+export const ContactPage = () => {
     const [messageInfo, setMessageInfo] = useState({
         email: "",
         name: "",
@@ -15,17 +15,11 @@ export const ContactPage: FC = () => {
 
     const messages = useMessagesIndex();
 
-    const handleChange: ChangeEventHandler<HTMLInputElement> = (e) => {
+    const handleChange = (e) => {
         setMessageInfo({ ...messageInfo, [e.target.id]: e.target.value });
     };
 
-    const handleTextAreaChange: ChangeEventHandler<HTMLTextAreaElement> = (
-        e
-    ) => {
-        setMessageInfo({ ...messageInfo, [e.target.id]: e.target.value });
-    };
-
-    const handleSubmit: FormEventHandler = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         sendContactMessage(messageInfo)
             .then(alert)
@@ -67,7 +61,7 @@ export const ContactPage: FC = () => {
                         style={{ maxHeight: "30rem", minHeight: "10rem" }}
                         id="message"
                         placeholder="Escreva sua mensagem"
-                        onChange={handleTextAreaChange}
+                        onChange={handleChange}
                     />
                     <button type="submit">Enviar</button>
                 </form>
