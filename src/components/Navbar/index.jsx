@@ -24,7 +24,18 @@ export function Navbar() {
             </ul>
 
             {
-            user?.user_type > 1 &&
+            user?.user_type >= 2 &&
+            <ul>
+                <>
+                    <li>
+                        <NavLink to="/admin">Admin dashboard</NavLink>
+                    </li>
+                </>
+            </ul>
+            }
+
+            {
+            user?.user_type >= 1 &&
             <ul>
                 <>
                     <li>
@@ -35,7 +46,7 @@ export function Navbar() {
             }
 
             {
-            user?.user_type > 0 &&
+            user?.user_type >= 0 &&
             <ul>
                 <>
                     <li>

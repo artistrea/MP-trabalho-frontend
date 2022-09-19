@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import { api } from "../api";
 import apiLogin from "../api/requests/users/login";
 
 const UserContext = createContext({user: {email: "", authentication_token: "", user_type: 0}, login: (user) => !!user, logout: () => {}});
