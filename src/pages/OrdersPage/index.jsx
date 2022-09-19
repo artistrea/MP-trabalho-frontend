@@ -5,11 +5,8 @@ import { ProductCard } from "../RestaurantMenu";
 
 const OrderCard = ({ order }) => {
     const FinishOrder = (order) => {
-        const status = {
-            status: 2
-        }
         api.patch(`orders/update/${order.id}`, {
-            status,
+            order: {status:  2}
         })
         .then((response) => {
             alert("O pedido está pronto!");
@@ -24,7 +21,7 @@ const OrderCard = ({ order }) => {
             <details >
                 <summary >
                     <span style={{ fontSize: "3rem", marginRight: "2rem" }}>Mesa número {order.client.table_id}</span>
-                    {/* <button onClick={FinishOrder(order)}> Finalizar pedido</button> */}
+                    <button onClick={ () => FinishOrder(order)}> Finalizar pedido</button>
                 </summary>
                 {order.products.map((product) => (
                     <>
